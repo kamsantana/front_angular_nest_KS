@@ -1,4 +1,4 @@
 export const environment = {
     production:false,
-    urlServidor: "htttp://127.0.0.1:3000"
+    urlServidor: "http://127.0.0.1:3000"
 };

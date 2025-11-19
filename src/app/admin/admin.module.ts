@@ -6,6 +6,13 @@ import { PerfilComponent } from './components/perfil/perfil.component';
 import { ClienteComponent } from './components/cliente/cliente.component';
 import { LayoutComponent } from './layout/layout.component';
 import { AppLayoutModule } from './layout/app.layout.module';
+import { CategoriaService } from './inventario/services/categoria.service';
+import { withFetch } from '@angular/common/http';
+import { TableModule } from 'primeng/table';
+import { DialogModule } from 'primeng/dialog';
+import { ButtonModule } from 'primeng/button';
+import { InputTextModule } from 'primeng/inputtext'; 
+import { InventarioModule } from './inventario/inventario.module';
 
 
 @NgModule({
@@ -17,7 +24,15 @@ import { AppLayoutModule } from './layout/app.layout.module';
   imports: [
     CommonModule,
     AdminRoutingModule,
-    AppLayoutModule
+    AppLayoutModule,
+    TableModule,
+    DialogModule,
+    ButtonModule,
+    InputTextModule,
+    InventarioModule
+  ],
+  providers: [
+    CategoriaService
   ]
 })
 export class AdminModule { }

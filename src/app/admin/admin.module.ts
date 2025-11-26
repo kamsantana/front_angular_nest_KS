@@ -9,10 +9,8 @@ import { AppLayoutModule } from './layout/app.layout.module';
 import { CategoriaService } from './inventario/services/categoria.service';
 import { withFetch } from '@angular/common/http';
 import { TableModule } from 'primeng/table';
-import { DialogModule } from 'primeng/dialog';
-import { ButtonModule } from 'primeng/button';
-import { InputTextModule } from 'primeng/inputtext'; 
 import { InventarioModule } from './inventario/inventario.module';
+import { ProductoService } from './iventario/services/producto.service';
 
 
 @NgModule({
@@ -26,13 +24,11 @@ import { InventarioModule } from './inventario/inventario.module';
     AdminRoutingModule,
     AppLayoutModule,
     TableModule,
-    DialogModule,
-    ButtonModule,
-    InputTextModule,
     InventarioModule
   ],
   providers: [
-    CategoriaService
+    CategoriaService,
+    ProductoService
   ]
 })
 export class AdminModule { }

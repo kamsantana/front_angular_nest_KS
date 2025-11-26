@@ -1,6 +1,7 @@
 <div class="card">
     <h1>Categoría</h1>
 
+<<<<<<< HEAD
     <p-button (click)="mostrarDialog()" label="Nueva Categoría" />
 <p-dialog 
     header="Categoría" 
@@ -9,6 +10,16 @@
     [breakpoints]="{ '1199px': '75vw', '575px': '90vw' }" 
     [style]="{ width: '30vw' }" 
     [draggable]="false" 
+=======
+    <p-button (click)="mostrarDialogo()" label="Nueva Categoría" />
+<p-dialog
+    header="Categoría"
+    [(visible)]="dialog_visible"
+    [modal]="true"
+    [breakpoints]="{ '1199px': '75vw', '575px': '90vw' }"
+    [style]="{ width: '30vw' }"
+    [draggable]="false"
+>>>>>>> 521ca955105692b82566d6ab14637767f016b853
     [resizable]="false"
     class="p-fluid">
 
@@ -37,7 +48,10 @@
             <th>ID</th>
             <th>NOMBRE</th>
             <th>DETALLE</th>
+<<<<<<< HEAD
             <th>ACCION</th>
+=======
+>>>>>>> 521ca955105692b82566d6ab14637767f016b853
         </tr>
     </ng-template>
     <ng-template pTemplate="body" let-categoria>
